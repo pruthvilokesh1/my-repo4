@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Static Example</title>
+<link rel="stylesheet" href="{%static "css/one.css" %}">
+</head>
+<body>
+<center><h1><u>{{name}}'s Favourites</u></h1></center>
+<div>
+<h2>Player:{{player}}</h2>
+<h3><a href="https://en.wikipedia.org/wiki/MS_Dhoni">click here</a></h3>
+<img src="{%static "images/dhoni.jpg" %}" alt="image not found">
+</div>
+<br><br>
+<div>
+<h2>Animal:{{animal}}</h2>
+<h3><a href="https://en.wikipedia.org/wiki/Lion">click here</a></h3>
+<img src="{%static "images/lion.jpg" %}" alt="image not found">
+</div>
+<br><br>
+<div>
+<h2>Subject:{{subject}}</h2>
+<h3><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">click here</a></h3>
+<img src="{%static "images/python.jpg" %}" alt="image not found">
+</div>
+</body>
+</html>
